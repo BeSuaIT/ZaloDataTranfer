@@ -103,18 +103,18 @@
 						<h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 3 days ago</span>
 						</h1>
 						<section class="docs-intro">
-							<p>An open-source program to help you transfer Zalo data to another drive, freeing up space on your C drive.</p>
+							<p>Thông thường, Zalo thường hay lưu trữ rất nhiều dữ liệu vào ổ C khiến ổ bị đầy 1 cách nhanh chóng. ZaloDataTransfer là 1 công cụ mã nguồn mở giúp người dùng Windows có thể giải phóng dung lượng ổ C một cách nhanh chóng và hiệu quả.</p>
 						</section><!--//docs-intro-->
 
-						<h3>Features:</h3>
+						<h3>Tính năng:</h3>
 						<ul>
-							<li>Tranfer Zalo Data from C drive to another drive.</li>
-							<li>Fix Zalo Shortcut after moving it (This only need for who moved the folder "Zalo").</li>
-							<li>Restore Backup (If after moving but nothing goes right, use this to restore to original).</li>
-							<li>Re-link Folders (use this feature when u have reinstalled Windows but still have Zalo data in other drive).</li>
+							<li>Di chuyển dữ liệu từ ổ C sang ổ khác.</li>
+							<li>Sửa lỗi Shortcut của Zalo (Cái này chỉ cần dùng khi Shortcut trên Desktop hoặc trong StartMenu bị lỗi).</li>
+							<li>Khôi phục lại trạng thái ban đầu (Cái này chỉ sử dụng khi Zalo bị lỗi khi dữ liệu bị chuyển đi).</li>
+							<li>Khôi phục lại dữ liệu Zalo (Cái này chỉ sử dụng khi bạn cài lại Windows và liên kết lại dữ liệu của Zalo ở ổ khác).</li>
 						</ul>
 
-						<h3>Requirements:</h3>
+						<h3>Yêu cầu:</h3>
 						<div class="callout-block callout-block-info">
 
 							<div class="content">
@@ -124,8 +124,8 @@
 									</span><!--//icon-holder-->
 									Note
 								</h4>
-								<li>Need to run in Administrator Rights.</li>
-								<li>Need to close and end all Zalo processes in Task Manager (will make this feature in next update).</li>
+								<li>Cần được chạy với quyền Quản trị viên (Công cụ có thể tự khởi động lại với quyền Quản trị viên nếu mở bình thường nhưng nên tự chạy để cho chắc).</li>
+								<li>Cần phải tắt toàn bộ tác vụ liên quan đến Zalo trong Task Manager (Sẽ cập nhật tính năng tự động này trong các Version sắp tới).</li>
 							</div><!--//content-->
 						</div><!--//callout-block-->
 						<div align="center">
@@ -138,7 +138,7 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Download</h1>
 						<section class="docs-intro">
-							<p>How to download? Simple, just click the "Download" button on the top right corner.</p>
+							<p>Làm sao để tải, đơn giản thôi, các bạn chỉ cần ấn nút "Download" ở góc trên bên phải màn hình.</p>
 						</section><!--//docs-intro-->
 					</header>
 				</article><!--//docs-article-->
@@ -147,21 +147,24 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">How it works</h1>
 						<section class="docs-intro">
-							<p>Zalo will normally be installed on user folder, so you need to select user that have Zalo installed. To list all the users, we can use this command in powershell.</p>
+							<p>Mọi thông tin về các câu lệnh được sử dụng trong công cụ.</p>
 						</section><!--//docs-intro-->
 					</header>
 					<section class="docs-section" id="item-3-1">
 						<h2 class="section-heading">Select Users</h2>
-						<p>Usually, </p>
+						<p>Thông thường, Zalo sẽ được cài đặt theo User chứ không phải toàn bộ hệ thống, 
+							nên trong nhiều trường hợp nhiều người dùng sẽ sử dụng nhiều Users trên 1 máy, nên sẽ phải chọn User trước khi vào công cụ.</p>
+						<p>Để đưa ra các danh sách Users trong máy, có thể sử dụng câu lệnh này trong Powershell:</p>
+						<div class="alert alert-primary" role="alert">
+							Get-WmiObject Win32_UserAccount | Select-Object -ExpandProperty Name
+						</div>
+						<p>Đa số tên Folder User sẽ theo tên User luôn nên sẽ lấy đường dẫn Folder ăn theo tên User 
+							(Nếu ai đã đổi tên Folder User nhưng tên User khác thì công cụ này chạy sẽ lỗi, không nên tiếp tục sử dụng nếu không muốn Zalo bị lỗi).</p>
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-3-2">
 						<h2 class="section-heading">Tranfer Data</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>Trước khi nói qua về cách thức hoạt động của công cụ, .</p>
 					</section><!--//section-->
 
 					<section class="docs-section" id="item-3-3">

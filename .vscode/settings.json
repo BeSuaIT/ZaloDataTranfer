@@ -20,5 +20,6 @@
             "database": "qlvb",
             "username": "postgres"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
