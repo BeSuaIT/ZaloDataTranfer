@@ -27,8 +27,7 @@ To get the tool, you just need to head to the [Release Page](https://github.com/
 - ZaloPC: The location where Zalo automatically stores all content from your messages (such as files, images, videos, stickers, etc.).
 - Zalo Received Files: The location where files are stored when you click Download File on Zalo.
 - zalo-updater: The location where Zalo stores its update setup files.
-- (You can read more at [5] in the tool).
-
+- You can find more at [Documentation](https://besuait.github.io/ZaloDataTransfer/index.html)
 ## Authors
 
 - [@NDWoodCompany](https://github.com/NDWoodCompany) - [@BeSuaIT](https://github.com/BeSuaIT)
